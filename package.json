@@ -1,0 +1,29 @@
+{
+  "name": "todo-api",
+  "main": "src/index.js",
+  "version": "1.0.0",
+  "description": "TO-Do-App-task",
+  "author": "walid-sayed",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/src/index.js",
+    "start:dev": "ts-node --transpile-only src/index.js",
+    "watch": "nodemon --watch src --ext ts --exec yarn start:dev",
+    "build:ts": "tsc",
+    "build": "yarn generate:flight-providers-ids && yarn build:ts"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "lodash": "^4.17.21",
+    "mongodb": "^4.13.0",
+    "mongoose": "^6.8.2",
+    "nodemon": "^2.0.20",
+    "validator": "^13.7.0"
+  }
+}
